@@ -15,11 +15,11 @@ def WakeUp():  #This is the first third of the story
 	
 def SleepIn():  #Case: I slept in
 	print
-	print "You have wisely decided to get out of the bag and start your day.  Your father is sitting by the fire eating the most delicious looking plate. (You wonder if it really tastes as good as it looks)  Your sister is getting a cup of hot cocco.  She just put the marshmallows in.  You head over to make your plate of food but you mom has already made you a plate.  You are in luck.  Breakfast is even better than it looks."
+	print "Sleeping is a very important part of a young persons life.  You can eat anytime but precious moments in the morning only come once a day.  You fall back into a pleasant slumber only to be woken up once more by the howelling of your dad.  It's something about hiking..."
 
 def EatBreakfast():  #Case:  I chose to eat Breakfast
 	print
-	print "Sleeping is a very important part of a young persons life.  You can eat anytime but precious moments in the morning only come once a day.  You fall back into a pleasant slumber only to be woken up once more by the howelling of your dad.  It's something about hiking..."
+	print "You have wisely decided to get out of the bag and start your day.  Your father is sitting by the fire eating the most delicious looking plate. (You wonder if it really tastes as good as it looks)  Your sister is getting a cup of hot cocco.  She just put the marshmallows in.  You head over to make your plate of food but you mom has already made you a plate.  You are in luck.  Breakfast is even better than it looks."
 	
 def MorningActivity():  #This is the second choice in the story
 	print
