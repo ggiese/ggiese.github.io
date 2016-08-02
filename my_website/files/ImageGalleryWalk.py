@@ -1,3 +1,8 @@
+#Image Manipulation
+#By Gary Giese
+#   Anthony Pitman
+#   Erika Ramos
+
 import matplotlib.pyplot as plt
 import os.path
 import numpy as np
@@ -15,6 +20,14 @@ def openFile(filename, isPlt = True):
     else:
         img = PIL.Image.open(filepath)
     return img
+    
+def saveFile(image, filename):
+    # Go to the directory
+    directory = os.path.dirname(os.path.abspath(__file__))
+    # Get the path to the file
+    filepath = os.path.join(directory, filename)
+    # Save the image
+    image.save(filename)
 
 def purpleify(img, fig, ax):
 # Get Height and Width of image
@@ -46,8 +59,6 @@ def circularFade(original_image, (cx, cy)=(0,0), radius=0):
     
     for r in range(radius,0,-10):
         my_color = (0, 0, 0, int(255-255.0/radius*r))
-        #color = (127,0,127,0)
-        #drawing_layer.ellipse((cx-r, cy-r, cx+r, cy+r), fill=color, outline=color)
         drawing_layer.ellipse((5,5,100,100),fill=my_color)
         
     # Make the new image, starting with all transparent
@@ -66,7 +77,6 @@ fig1.show()
 purpleButterfly = openFile('sulfur.JPG')
 fig2, ax2 = plt.subplots(1,1)
 ax2.axis('off')
-#ax.imshow(butterfly, interpolation='none')
 purpleify(purpleButterfly, fig2, ax2)
 ax2.imshow(purpleButterfly, interpolation='none')
 fig2.show()
@@ -76,7 +86,9 @@ fig3, ax3 = plt.subplots(1,1)
 ax3.axis('off')
 imgEarth = openFile('earth.png', False)
 pilPurpleButterfly = PIL.Image.fromarray(purpleButterfly)
+saveFile(pilPurpleButterfly, "PurpleButterfly.jpg")
 pilPurpleButterfly.paste(imgEarth, (900,600), mask=imgEarth)
+saveFile(pilPurpleButterfly, "PurpleButterflyEarth.jpg")
 ax3.imshow(pilPurpleButterfly, interpolation='none')
 fig3.show()
 
