@@ -2,6 +2,8 @@
 #By Gary Giese
 #   Anthony Pitman
 #   Erika Ramos
+#
+#August 2, 2016
 
 import matplotlib.pyplot as plt
 import os.path
