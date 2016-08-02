@@ -27,7 +27,7 @@ def saveFile(image, filename):
     # Get the path to the file
     filepath = os.path.join(directory, filename)
     # Save the image
-    image.save(filename)
+    image.save(filepath)
 
 def purpleify(img, fig, ax):
 # Get Height and Width of image
