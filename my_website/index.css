@@ -32,7 +32,9 @@ table {
 	border-collapse: collapse;
 	
 }
-
+t01{
+	border-style: hidden;	
+}
 td {
     padding: 5px;
     border: solid;
