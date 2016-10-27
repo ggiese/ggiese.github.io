@@ -32,14 +32,14 @@ table {
 	border-collapse: collapse;
 	
 }
-table#t01{
+#t01{
 	background-color:#000000;
 	border: hidden;	
 }
-td#td01{
+#td01{
 	border: hidden;
 }
-tr#tr01{
+#tr01{
 	border: hidden;
 	
 }
