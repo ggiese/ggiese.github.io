@@ -33,15 +33,14 @@ table {
 	
 }
 t01{
-	border-style: hidden;	
+	border: hidden;	
 }
 td01{
-	padding: 0px;
 	border: hidden;
 	border-color: #003333;
 }
 tr01{
-	border: 0px hidden #003333;
+	border: hidden #003333;
 	
 }
 td {
